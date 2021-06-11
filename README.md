@@ -117,7 +117,7 @@
       <title>NDVI</title>
     </head>
     <body>
-      <p>Загрузите изображения для красного и инфракрасного спектров в формате tif:</p>
+      <p>Загрузите изображения в формате tif для красного и инфракрасного спектров Landsat 7:</p>
           <form method="POST" action="" enctype="multipart/form-data">
             <div>
               <input type="file" name="file" id="file-button" accept=".tif" multiple />
