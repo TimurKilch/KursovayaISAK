@@ -47,8 +47,7 @@ def upload_files():
 
 	ndvi = ndvi_caclucate_landsat7(nir_image, red_image)
 	greyscale = ((ndvi + 1.)/2.) * 256.
-    heatmap = cv2.cvtColor(cv2.applyColorMap(greyscale.astype('uint8'), cv2.COLORMAP_SUMMER), cv2.COLOR_BGR2RGB)
-    
+    	heatmap = cv2.cvtColor(cv2.applyColorMap(greyscale.astype('uint8'), cv2.COLORMAP_SUMMER), cv2.COLOR_BGR2RGB)
 	uri = get_uri(heatmap)
 
 	return render_template('result.html', image=uri)
