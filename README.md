@@ -109,12 +109,26 @@
 
 Для того, чтобы убедиться что сайт работает восполлзуемся командой curl:
 
-    [tkilch@localhost isak_project]$ curl 10.0.2.15:60 | head -n 3
+    [tkilch@localhost isak_project]$ curl 10.0.2.15:60
 
-Получим следующий вывод в терминал:  
-    \<head>  
-    \<title>NDVI</title>  
-    \</head>  
+Увидим следующий вывод в терминал:  
+
+    \<head>
+      \<title>NDVI</title>
+    \</head>
+    \<body>
+      \<p>Загрузите изображения для красного и инфракрасного спектров в формате tif:</p>
+          \<form method="POST" action="" enctype="multipart/form-data">
+            \<div>
+              \<input type="file" name="file" id="file-button" accept=".tif" multiple />
+            \</div>
+            \<br>
+            \<div>
+              \<input type="submit" id="file-submit" class="submitfile" />
+            \<br/>
+            \</div>
+          \</form>
+    \</html>
   
 # Вывод:  
 В ходе выполнения курсовой работы было создано приложение python для работы с Flask, позволяющее загружать и обрабатывать изображения спектров в формате ".tif" и выводить пользователю цветное изображение NDVI. 
