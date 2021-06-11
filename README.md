@@ -80,7 +80,7 @@
     [tkilch@localhost isak_project]$ sudo systemctl start isak_project  
     [tkilch@localhost isak_project]$ sudo systemctl enable isak_project  
       
-### 6. Настроим серверный блок Nginx.  
+### 6. Настройка серверного блока Nginx.  
 Необходимо настроить Nginx для передачи веб-запросов в  сокет с использованием uWSGI протокола.  
 Откроем файл конфигурации:  
 
