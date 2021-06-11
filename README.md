@@ -109,7 +109,7 @@
 
 Для того, чтобы убедиться что сайт работает восполлзуемся командой curl:
 
-    [tkilch@localhost isak_project]$ curl 10.0.2.15:80
+    [tkilch@localhost isak_project]$ curl -L 10.0.2.15:80
 
 Увидим следующий вывод в терминал:  
 
